@@ -6,8 +6,8 @@ describe('Тестирование qa.studio', function () {
 
 
 
-        cy.get('.auth-form > form > [type="email"]').type('malinovaya10@gmail.com');
-        cy.get('.auth-form > form > [type="password"]').type('Natapowerty1010!');
+        cy.get('.auth-form > form > [type="email"]').type('Валидная почта');
+        cy.get('.auth-form > form > [type="password"]').type('Валидный пароль');
         cy.get('.auth-form__submit > .s-button__content').click();
 
         cy.contains('Мои заказы');
